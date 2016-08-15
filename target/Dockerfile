@@ -35,7 +35,7 @@ RUN \
 
 COPY pingService-1.0-SNAPSHOT.jar /opt
 
-COPY config.yml /opt
+COPY ../config.yml /opt
 
 EXPOSE 8081 8082
 
