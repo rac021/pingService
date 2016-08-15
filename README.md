@@ -26,7 +26,7 @@
 ```
 
 
-**Create Docker image **
+**Create Docker image**
 
 ```
 ❯  $  docker build -t pingservice .
