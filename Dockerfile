@@ -33,9 +33,9 @@ RUN \
     apt-get clean  && \
     rm -rf /var/lib/apt/lists/*
 
-COPY pingService-1.0-SNAPSHOT.jar /opt
+COPY target/pingService-1.0-SNAPSHOT.jar /opt/pingService-1.0-SNAPSHOT.jar
 
-COPY ../config.yml /opt
+COPY config.yml /opt
 
 EXPOSE 8081 8082
 
