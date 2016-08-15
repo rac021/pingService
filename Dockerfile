@@ -35,6 +35,8 @@ RUN \
 
 COPY entryPoint.sh  config.yml  target/pingService-1.0-SNAPSHOT.jar  /opt/
 
+RUN chmmod +x /opt/entryPoint.sh
+
 EXPOSE 8081 8082
 
 WORKDIR /opt
