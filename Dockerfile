@@ -33,7 +33,7 @@ RUN \
     apt-get clean  && \
     rm -rf /var/lib/apt/lists/*
 
-COPY  ntryPoint.sh  config.yml  target/pingService-1.0-SNAPSHOT.jar  /opt
+COPY entryPoint.sh  config.yml  target/pingService-1.0-SNAPSHOT.jar  /opt
 
 EXPOSE 8081 8082
 
