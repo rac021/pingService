@@ -24,3 +24,14 @@
 ❯  $  curl http://localhost:8082/ping
   
 ```
+
+
+**Create Docker image **
+
+```
+❯  $  docker build -t pingservice .
+
+   $  docker run -d -it -p 8081 -p 8082 pingservice server /opt/config.yml
+   
+```
+
