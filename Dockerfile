@@ -33,17 +33,15 @@ RUN \
     apt-get clean  && \
     rm -rf /var/lib/apt/lists/*
 
-COPY target/pingService-1.0-SNAPSHOT.jar /opt/pingService-1.0-SNAPSHOT.jar
-
-COPY config.yml /opt
+COPY  ntryPoint.sh  config.yml  target/pingService-1.0-SNAPSHOT.jar  /opt
 
 EXPOSE 8081 8082
 
+WORKDIR /opt
+
 # define default command
 
-ENTRYPOINT ["java", "-jar", "/opt/pingService-1.0-SNAPSHOT.jar"]
-
+ENTRYPOINT ./entryPoint.sh
 
 # docker run -d -it -p 8081 -p 8082 pingservice server /opt/config.yml
-
 
