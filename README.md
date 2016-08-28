@@ -49,9 +49,9 @@
 ```
 ❯  $ docker inspect --format '{{ .NetworkSettings.Ports }}'  myPingService
 
-   $ curl $(hostname --all-ip-addresses | awk '{print $1}'):SPECIFIC_PORT/ping
+   $ curl $(hostname --all-ip-addresses | awk '{print $1}'):LOCAL_PORT/ping
    
-   $ curl $(hostname --all-ip-addresses | awk '{print $1}'):SPECIFIC_PORT/sleep/2000
+   $ curl $(hostname --all-ip-addresses | awk '{print $1}'):LOCAL_PORT/sleep/2000
    
 ```
 
