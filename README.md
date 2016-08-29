@@ -40,7 +40,7 @@
    
 ```
 
-*2 - From Docker Hub :*
+*2 - From Docker Hub :* [https://hub.docker.com/r/rac021/pingservice](https://hub.docker.com/r/rac021/pingservice)
 
 ```
 ❯  $  docker run -d -it \
